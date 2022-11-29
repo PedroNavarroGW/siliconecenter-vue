@@ -1,8 +1,66 @@
-// Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
-
 // Variables
 @import 'variables';
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap-grid';
+
+header{
+    svg{
+        width: 100%;
+    }
+
+    p{
+        text-transform: uppercase;
+        color: #000000;
+        font-family: Helvetica;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-right: 5px;
+    }
+
+    .menu{
+        outline: none;
+        border: none;
+        background: transparent;
+
+        .hamburguer{
+            width: 20px;
+            height: 2px;
+            background-color: black;
+            display: block;
+            border-radius: 10px;
+
+            &:first-of-type{
+                margin-bottom: 5px;
+            }
+
+            &:last-of-type{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .navDesktop{
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        .navLinks{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            a{
+                color: #525252;
+                font-family: Helvetica;
+                font-size: 11px;
+                font-weight: 700;
+                line-height: 19px;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+    }
+}
