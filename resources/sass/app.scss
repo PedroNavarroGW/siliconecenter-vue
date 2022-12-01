@@ -4,11 +4,27 @@
 // Bootstrap
 @import 'bootstrap/scss/bootstrap-grid';
 
-header{
-    svg{
-        width: 100%;
-    }
+body{
+    margin: 0;
+}
 
+picture{
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    width: unset;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+header{
     p{
         text-transform: uppercase;
         color: #000000;
@@ -42,25 +58,763 @@ header{
     }
 }
 
-@media (min-width: 768px){
-    .navDesktop{
-        display: flex !important;
-        align-items: center;
-        justify-content: flex-end;
-        .navLinks{
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            a{
-                color: #525252;
-                font-family: Helvetica;
-                font-size: 11px;
+.absolute{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#banner{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    
+    h1{
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 24px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 6px;
+    }
+
+    h2{
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 29px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 25px;
+    }
+    
+    .complementText{
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 25ch;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    #formBox{
+        display: flex;
+        flex-direction: column;
+        margin-top: 22px;
+
+        .formHeader{
+            background-color: #009f99;
+            border-radius: 30px 30px 0px 0px;
+            padding: 14px;
+            
+            p{
+                color: #ffffff;
+                font-family: Arial;
+                font-size: 18px;
                 font-weight: 700;
-                line-height: 19px;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 24px;
                 text-align: center;
                 text-transform: uppercase;
-                text-decoration: none;
+                max-width: unset;
+
+                &:nth-of-type(2){
+                    color: #ffffff;
+                    font-family: Arial;
+                    font-size: 12px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: 15px;
+                    text-align: center;  
+                    text-transform: uppercase;
+                }
+            }
+        } 
+
+        .formBody{
+            border-radius: 0px 0px 30px 30px;  
+            background-color: #fff;
+            padding: 20px 14px;
+            p{
+                color: #d534ac;
+                font-family: Arial;
+                font-size: 13px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 10px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 0;
+                max-width: unset;
+            }
+
+            .formGroup{
+                display: flex;
+                flex-direction: column;
+
+                label{
+                    color: #000000;
+                    font-family: Arial;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: 35px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                input{
+                    border-radius: 19px;
+                    border: 1px solid #000000;
+                    background-color: #ffffff;
+                    padding: 12px;
+                }
+
+                input[type="submit"]{
+                    border-radius: 24px;
+                    background-color: #d534ac;
+                    color: #ffffff;
+                    font-family: Arial;
+                    font-size: 13px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: 7px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    border: none;
+                    padding: 18px;
+                    margin-top: 10px;
+                }
             }
         }
+    }
+}
+
+#proteses{
+    padding-bottom: 30px;
+    .swiper-button-next, .swiper-button-prev{
+        color: #57c0bc !important;
+    }
+
+    .textoProteseSlider{
+        color: #3d3d3d;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 18px;
+        text-align: center;
+        max-width: 15ch;
+    }
+
+    .swiper-slide{
+        img{
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+
+    h2{
+        color: #00a099;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: center;
+        max-width: 26ch;
+        margin: 40px auto 20px;
+    }
+}
+
+#proteseSilicone{
+    background-color: #f0f0f0;
+    padding: 55px 0 85px;
+
+    h2{
+        color: #00a099;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    p{
+        color: #525252;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 25px;
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    } 
+
+    img{
+        margin-bottom: 55px;
+    }
+
+    a{
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 46px;
+        background-color: #d534ac;
+        padding: 18px 23px;
+        text-decoration: none;
+    }
+}
+
+#unidades{
+    padding: 55px 0 50px;
+    h2{
+        color: #00a099;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: center;
+        max-width: 23ch;
+        margin: 0 auto 30px;
+    }
+
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 46px;
+        background-color: #d534ac;
+        padding: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        margin-top: 40px;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        color: #57c0bc !important;
+        scale: 0.5;
+    }
+
+    .swiper-slide img{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+#sobreHome{
+    padding: 40px 0 70px;
+    .texto{
+        h2{
+            color: #00a099;
+            font-family: Arial;
+            font-size: 20px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 30px;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        p{
+            color: #3d3d3d;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 28px;
+            text-align: left;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+        a{
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none; 
+            border-radius: 46px;
+            background-color: #d534ac;
+            padding: 18px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        color: #57c0bc !important;
+        scale: 0.6;
+    }
+
+    .swiper-slide img{
+        width: 70%;
+    }
+}
+
+#blog{
+    background-color: #f0f0f0;
+    padding: 64px 0 95px;
+
+    h2{
+        color: #00a099;
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 34px;
+        max-width: 12ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ctaBlog{
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 46px;
+        background-color: #00a099;
+        padding: 18px;
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+        text-decoration: none;
+    }
+
+    .cardPost {
+        padding: 20px 18px 30px;
+        width: 60%;
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+        border: 1px solid #57c0bc;
+        border-radius: 13px;
+        text-align: center;
+
+        h3{
+            color: #3d3d3d;
+            font-family: Arial;
+            font-size: 16px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 25px;
+            text-align: left;
+            margin-bottom: 20px;
+            margin-top: 15px;
+        }
+
+        a{
+            color: #57c0bc;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 16px;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 34px;
+            border: 2px solid #57c0bc;
+            text-decoration: none;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: fit-content;
+            margin: 0 auto;
+        }
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        color: #57c0bc !important;
+        scale: 0.6;
+    }
+}
+
+#perguntasFrequentes{
+    padding: 54px 0 50px;
+
+    h2{
+        color: #00a099;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 30px;
+        text-align: left;
+        margin-bottom: 15px;
+    }
+
+    .accordion{
+        border-bottom: 4px solid #c2c2c2;
+
+        .accordionHeader{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 0 15px;
+
+            h3{
+                color: #525252;
+                font-family: Arial;
+                font-size: 16px;
+                font-weight: 700;
+                font-style: normal;
+                line-height: 25px;
+                text-align: left;
+            }
+        }
+
+        .accordionBody{
+            display: none;
+        }
+    }
+
+    .cta{
+        border-radius: 46px;
+        background-color: #d534ac;
+        color: #ffffff;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        padding: 22px 0;
+        text-decoration: none;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px){
+    header{
+        padding: 15px 0;
+        .navDesktop{
+            display: flex !important;
+            align-items: center;
+            justify-content: flex-end;
+            .navLinks{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                width: 100%;
+                a{
+                    color: #525252;
+                    font-family: Helvetica;
+                    font-size: 12px;
+                    font-weight: 700;
+                    font-style: normal;
+                    letter-spacing: normal;
+                    line-height: 16px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    #banner{    
+        h1{
+            text-align: left;
+            margin-top: 20px;
+            font-size: 30px;
+            line-height: 36px;
+            max-width: 14ch;
+
+            &::after{
+                content: '';
+                display: block;
+                width: 121px;
+                height: 3px;
+                background-color: #ffffff;
+                margin-top: 16px;
+            }
+        }
+    
+        h2{
+            text-align: left;
+            margin-top: 65px;
+            font-size: 18px;
+            line-height: 35px;
+        }
+        
+        .complementText{
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 18px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 30px;
+            text-align: left;
+            text-transform: uppercase;
+            margin: 18px 0 0;
+        }
+    
+        #formBox{
+            margin-top: 125px;
+        }
+    }
+
+    #proteses{
+        padding-bottom: 50px;
+        .textoProteseSlider{
+            font-size: 18px;
+            line-height: 27px;
+            max-width: unset;
+        }
+
+        .swiper-slide{
+            img{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        h2{
+            color: #00a099;
+            font-family: Arial;
+            font-size: 26px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 35px;
+            text-align: center;
+            max-width: unset;
+            margin: 30px 0 20px;
+        }
+    }
+
+    #proteseSilicone{
+        .imagem{
+            order: 1;
+
+            a{
+                display: none;
+            }
+        }
+
+        .texto{
+            order: 2;
+
+            a{
+                display: block !important;
+                margin-top: 60px;
+                font-size: 15px;
+                padding: 25px;
+                width: fit-content;
+            }
+        }
+
+        h2{
+            color: #00a099;
+            font-family: Arial;
+            font-size: 28px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 35px;
+            text-align: left;
+        }
+
+        p{
+            color: #3d3d3d;
+            font-family: Arial;
+            font-size: 22px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 41px;
+            text-align: left;
+            margin-top: 30px;
+            margin-bottom: 35px;
+        }
+    }
+
+    #unidades{
+        padding: 55px 0 50px;
+        h2{
+            color: #00a099;
+            font-family: Arial;
+            font-size: 26px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 35px;
+            text-align: center;
+            max-width: unset;
+            margin: 0 auto 30px;
+        }
+    
+        a{
+            padding: 17px 64px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 15px;
+        }
+    
+        .swiper-button-next, .swiper-button-prev{
+            scale: 1;
+        }
+
+        .swiper-slide img{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    #sobreHome{
+        padding: 40px 0 70px;
+        .texto{
+            h2{
+                color: #00a099;
+                font-family: Arial;
+                font-size: 26px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 35px;
+                text-align: left;
+                margin-top: 50px;
+            }
+    
+            p{
+                color: #3d3d3d;
+                font-family: Arial;
+                font-size: 20px;
+                font-weight: 400;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 35px;
+                text-align: left;
+                margin-bottom: 40px;
+                margin-top: 30px;
+            }
+    
+            a{
+                width: fit-content;
+                padding: 18px 40px;
+            }
+        }
+    
+        .swiper-button-next, .swiper-button-prev{
+            scale: 1;
+        }
+    
+        .swiper-slide img{
+            width: 70%;
+        }
+    }
+
+    #blog{
+        padding: 64px 0 95px;
+    
+        h2{
+
+        }
+    
+        .ctaBlog{
+            width: fit-content;
+            padding: 18px 60px;
+            margin: 50px auto 0;
+        }
+    
+        .cardPost {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: unset;
+            min-height: 308px;
+    
+            h3{
+                
+            }
+    
+            a{
+                
+            }
+        }
+    }
+
+    #perguntasFrequentes{
+        .cta{
+            width: fit-content;
+            padding: 22px 30px;
+            margin: 70px auto 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 768px){
+    .complementText{
+        display: none;
     }
 }

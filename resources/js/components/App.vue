@@ -1,13 +1,16 @@
 <script>
 import Header from './helper/Header.vue'
+import Home from './Home.vue'
 
 export default {
   components: {
-    Header
+    Header,
+    Home
   }
 }
 </script>
 
 <template>
       <Header/>
+      <Home/>
 </template>
