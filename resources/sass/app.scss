@@ -749,6 +749,81 @@ footer{
     }
 }
 
+.bannerHeader{
+    .box{
+        background-color: #fff;
+        padding: 34px 12px 16px;
+        
+        h1{
+            color: #d534ac !important;
+            font-family: Arial !important;
+            font-size: 24px !important;
+            font-weight: 700 !important;
+            font-style: normal !important;
+            letter-spacing: normal !important;
+            line-height: 30px !important;
+            text-align: left !important;
+            margin-top: 16px !important;
+            text-transform: none !important;
+            max-width: unset !important;
+        }
+
+        a{
+            color: #525252;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: normal;
+            line-height: 16px;
+            text-align: left;
+            text-decoration: none;
+
+        }
+
+        a + a{
+            &::before{
+                content: "";
+                display: inline-block;
+                height: 6px;
+                width: 6px;
+                margin-right: 12px;
+                margin-left: 10px;
+                border-radius: 2px;
+                border-right: 3px solid #57c0bc;
+                border-bottom: 3px solid #57c0bc;
+                rotate: -45deg;
+            }
+        }
+    }
+}
+
+#inicioSimulador{
+    padding:34px 0;
+    h2{
+        color: #525252;
+        font-family: Arial;
+        font-size: 26px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 35px;
+        text-align: left;
+    }
+    p{
+        color: #525252;
+        font-family: Arial;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 33px;
+    }
+
+}
+
 @media (min-width: 768px){
     header{
         padding: 15px 0;
@@ -1062,6 +1137,35 @@ footer{
                 a{
                     margin-bottom: 0;
                 }
+            }
+        }
+    }
+
+    .bannerHeader{
+        .box{
+            background-color: #fff;
+            padding: 30px 70px 10px;
+            border-radius: 75px 75px 0 0;
+            h1{
+                font-size: 30px !important;
+                line-height: 48px !important;
+                margin-top: 16px !important;
+            }
+    
+            a{
+                font-size: 16px;
+                line-height: 18px;
+
+            }
+            h2{
+                color: #525252;
+                font-family: Arial;
+                font-size: 35px;
+                font-weight: 700;
+                font-style: normal;
+                letter-spacing: normal;
+                line-height: 50px;
+                text-align: left;   
             }
         }
     }

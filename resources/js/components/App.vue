@@ -5,12 +5,11 @@ import Home from './Home.vue'
 export default {
   components: {
     Header,
-    Home
+    Home,
   }
 }
 </script>
 
 <template>
       <Header/>
-      <Home/>
 </template>
