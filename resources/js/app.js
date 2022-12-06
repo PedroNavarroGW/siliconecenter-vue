@@ -6,8 +6,8 @@
 
  import './bootstrap';
  import { createApp } from 'vue';
- import { createRouter, createWebHistory } from 'vue-router'
- import routes from './routes.js'
+ import { createRouter, createWebHistory } from 'vue-router';
+ import routes from './routes.js';
  import App from './components/App.vue';
  
  
