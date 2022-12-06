@@ -6,7 +6,8 @@
     import SliderClinica from './helper/sliders/SliderClinica.vue'
     import BlogPosts from './helper/BlogPosts.vue'
     import PerguntasFrequentes from './helper/PerguntasFrequentes.vue'
-    
+    import Footer from './helper/Footer.vue'
+
     export default {
         mount() {
             
@@ -18,7 +19,8 @@
             SliderCirurgia,
             SliderClinica,
             BlogPosts,
-            PerguntasFrequentes
+            PerguntasFrequentes,
+            Footer
         }
     }
 </script>
@@ -136,4 +138,5 @@
     </section>
     <BlogPosts/>
     <PerguntasFrequentes/>
+    <Footer/>
 </template>

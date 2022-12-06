@@ -17,8 +17,8 @@
                     <div class="col-md-9 navDesktop" style="display: none">
                         <div class="navLinks">
                             <router-link to="/">HOME</router-link>
-                            <router-link to="/">SIMULADOR DE PRÓTESE</router-link>
-                            <router-link to="/">QUEM SOMOS</router-link>
+                            <router-link to="/simuladorProtese">SIMULADOR DE PRÓTESE</router-link>
+                            <router-link to="/quem-somos">QUEM SOMOS</router-link>
                             <router-link to="/">NOSSA EQUIPE</router-link>
                             <router-link to="/">PRÓTESE DE SILICONE</router-link>
                             <router-link to="/">OUTROS PROCEDIMENTOS</router-link>
@@ -31,6 +31,7 @@
             </div>
         </nav>
     </header>
+    <router-view/>
 </template>
 
 <script>
